@@ -13,7 +13,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
     respond_to do |format|
       if @project.save
-        format.html {redirect_to @project, notice: 'Your post is now live.'}
+        format.html {redirect_to projects_path, notice: 'Your post is now live.'}
       else
         format.html { render :new }
       end
@@ -27,7 +27,7 @@ class ProjectsController < ApplicationController
   def update
     respond_to do |format|
       if @project.update(project_params)
-        format.html {redirect_to @project, notice: 'Your post was successfully updated.'}
+        format.html {redirect_to projects_path, notice: 'Your post was successfully updated.'}
       else
         format.html { render :edit }
       end
@@ -41,7 +41,7 @@ class ProjectsController < ApplicationController
   def destroy
     @project.destroy
     respond_to do |format|
-      format.html { redirect_to @project, notice: 'Project has been purged'}
+      format.html { redirect_to projects_path, notice: 'Project has been purged'}
     end
   end
 
