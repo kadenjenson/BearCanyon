@@ -1,25 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+X Create MVP(including CRUD)
 
-Things you may want to cover:
+X Import bootstrap
 
-* Ruby version
+* Add users only for the admins
 
-* System dependencies
+* Only admins can add/edit/delete projects
 
-* Configuration
+* Style pages
 
-* Database creation
+* Links to email and map in the contact
 
-* Database initialization
+* Implement ability to add pictures to projects
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# BearCanyon
+* Give home an admin changeable background
