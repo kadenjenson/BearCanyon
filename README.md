@@ -4,9 +4,7 @@ X Create MVP(including CRUD)
 
 X Import bootstrap
 
-X Add devise only for the admins.
-
-* Remove "sign-up". Only admins may sign in. No new account may be created.
+X Add devise.
 
 * Only admins can add/edit/delete projects
 

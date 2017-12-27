@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, path: '', path_names: {sign_in: 'login', sign_out: 'logout'}
   resources :projects
 
   get 'about', to: 'pages#about'
