@@ -3,10 +3,12 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
+    @page_title = "BC | Projects"
   end
 
   def new
     @project = Project.new
+    @page_title = "BC | New Project"
   end
 
   def create
@@ -21,7 +23,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @project = Project.find(params[:id])
+    @page_title = @project.title
   end
 
   def update
@@ -35,7 +37,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = Project.find(params[:id])
+    @page_title = @project.title
   end
 
   def destroy
