@@ -1,7 +1,15 @@
 @import "bootstrap";
 
-nav a:hover {
-  color: #ED1414;
+/*
+* Custom styles
+*/
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12%;
 }
 
 #background {
