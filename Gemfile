@@ -7,7 +7,7 @@ end
 
 
 gem 'rails', '~> 5.1.4'
-gem 'sqlite3'
+gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -31,4 +31,4 @@ gem 'kado_viewer', '~> 0.1.0'
 gem 'bootstrap', '~> 4.0.0.beta2'
 gem 'jquery-rails'
 gem 'devise', '~> 4.3'
-# gem 'petergate', '~> 1.8', '>= 1.8.1'
+gem 'petergate', '~> 1.8', '>= 1.8.1'
