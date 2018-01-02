@@ -1,8 +1,10 @@
-<tr>
-  <td><%= project.title %></td>
-  <td><%= distance_of_time_in_words(project.created_at, Time.now) %> ago</td>
-  <td><%= project.body %></td>
-  <td><%= link_to 'Show', project %></td>
-  <td><%= link_to 'Edit', edit_project_path(project) if logged_in?(:site_admin) %></td>
-  <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></td>
-</tr>
+<div class="card">
+  <%= image_tag("placeholder.jpg", size: "350x200", :alt => "Theres usually an image here") %>
+  <h4><%= link_to project.title, project %></h4>
+    <span class="card-text">Posted <%= distance_of_time_in_words(project.created_at, Time.now) %> ago</span>
+
+  <div class="display-inline-block">
+    <span><%= link_to 'Edit', edit_project_path(project) if logged_in?(:site_admin) %></span>
+    <span><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></span>
+  </div>
+</div>
