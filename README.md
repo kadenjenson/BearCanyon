@@ -6,12 +6,12 @@ X Import bootstrap
 
 X Add devise.
 
-* Only admins can add/edit/delete projects
+X Only admins can add/edit/delete projects
 
-* Style pages
+X Style pages
 
 * Links to email and map in the contact
 
 * Implement ability to add pictures to projects
 
-* Give home an admin changeable background
+* Implement ability for users to comment on project posts

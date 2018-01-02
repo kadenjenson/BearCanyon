@@ -1,14 +1,26 @@
 @import "bootstrap";
 
-#container {
+#projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding: 10%;
 }
 
-body {
-  background-color: grey;
+#projects a:hover {
+  color: LightGreen;
+}
+
+.project-header {
+  text-align: center;
+}
+
+.mastfoot {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(209, 216, 230, 1.00);
 }

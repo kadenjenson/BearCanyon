@@ -1,7 +1,8 @@
 User.create(email: "kaden@admin.com",
               name: "Kaden",
               password: "asdfasdf",
-              password_confirmation: "asdfasdf"
+              password_confirmation: "asdfasdf",
+              roles: "site_admin"
               )
 
 puts "One User created."

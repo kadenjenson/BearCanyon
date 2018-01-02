@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div id="container">
+    <div class="container" id="pages">
       
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
@@ -22,7 +22,8 @@
       <div id="background"></div>
 
       <%= yield %>
-      
+
+      <%= render 'shared/app_footer' %>
     </div>
   </body>
 </html>
