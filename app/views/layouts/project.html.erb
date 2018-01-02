@@ -13,15 +13,14 @@
 
   <body>
     <div class="container" id="projects">
-      
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
 
       <%= render 'shared/nav', location: 'top' %>
 
       <%= yield %>
 
-      <%= render 'shared/project_footer', location: 'bottom' %>
+      <%= render 'shared/app_footer' %>
+
+      <%= render 'shared/alerts' %>
       
     </div>
   </body>

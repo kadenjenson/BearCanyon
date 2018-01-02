@@ -13,9 +13,6 @@
 
   <body>
     <div class="container" id="pages">
-      
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
 
       <%= render 'shared/nav', location: 'top' %>
 
@@ -24,6 +21,9 @@
       <%= yield %>
 
       <%= render 'shared/app_footer' %>
+
+      <%= render 'shared/alerts' %>
+      
     </div>
   </body>
 </html>
