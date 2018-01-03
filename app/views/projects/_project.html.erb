@@ -4,7 +4,11 @@
     <span class="card-text">Posted <%= distance_of_time_in_words(project.created_at, Time.now) %> ago</span>
 
   <div class="display-inline-block">
-    <span><%= link_to 'Edit', edit_project_path(project) if logged_in?(:site_admin) %></span>
-    <span><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></span>
+    <span class="btn btn-default edit", aria-label="Edit">
+      <%= link_to '', edit_project_path(project), class: "fa fa-pencil-square-o fa-lg" if logged_in?(:site_admin) %>
+    </span>
+    <span class="btn btn-danger delete", aria-label="Delete">
+      <%= link_to '', project, class: "fa fa-trash-o fa-lg", method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
+    </span>
   </div>
 </div>

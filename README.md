@@ -10,7 +10,7 @@ X Only admins can add/edit/delete projects
 
 X Style pages
 
-* Links to email and map in the contact
+X Links to email and map in the contact
 
 * Implement ability to add pictures to projects
 

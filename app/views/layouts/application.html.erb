@@ -12,18 +12,16 @@
   </head>
 
   <body>
-    <div class="container" id="pages">
+    <%= render 'shared/nav', location: 'top' %>
+      <div class="container" id="pages">
 
-      <%= render 'shared/nav', location: 'top' %>
+        <div id="background"></div>
 
-      <div id="background"></div>
+        <%= yield %>
 
-      <%= yield %>
-
-      <%= render 'shared/app_footer' %>
-
-      <%= render 'shared/alerts' %>
-      
-    </div>
+        <%= render 'shared/alerts' %>
+        
+      </div>
+    <%= render 'shared/app_footer', location: 'bottom' %>
   </body>
 </html>
