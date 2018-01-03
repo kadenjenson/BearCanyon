@@ -5,6 +5,9 @@
   <li class="nav-item">
     <%= link_to 'New Post', new_project_path, class: 'btn btn-primary' if logged_in?(:site_admin) %>
   </li>
+  <li class="nav-item">
+    <%= paginate @projects %>
+  </li>
 </ul>
 
 <div class="album text-muted">
