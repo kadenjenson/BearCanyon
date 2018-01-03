@@ -43,6 +43,14 @@
   }
   @content;
 }
+
+@mixin centering {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
 /*
 * Scss mixins end
 */
@@ -78,11 +86,28 @@ body {
 /*
 * Button Styles Start
 */
-.edit {
-  @include buttons
+
+.pagination {
+  @include centering {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
 }
 
-.delete {
+#previous-pg {
+  position: absolute;
+  left: 14%;
+  text-align: left;
+}
+
+#next-pg {
+  position: absolute;
+  right: 14%;
+  text-align: right;
+}
+
+.edit {
   @include buttons
 }
 
@@ -92,6 +117,10 @@ body {
   &:hover {
     color: LightGreen;
   }
+}
+
+.delete {
+  @include buttons
 }
 
 .delete a {
