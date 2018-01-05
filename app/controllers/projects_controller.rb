@@ -19,7 +19,7 @@ class ProjectsController < ApplicationController
       if @project.save
         format.html {redirect_to projects_path, notice: 'Your post is now live.'}
       else
-        format.html { render :new }
+        format.html { render :new, notice: 'You need to say something at least.'}
       end
     end
   end

@@ -34,11 +34,11 @@
 @mixin buttons {
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 0 4px #999;
+  box-shadow: 0 3px #999;
   margin-top: 10px;
   margin-right: 5px;
   &:active {
-    box-shadow: 0 2px #666;
+    box-shadow: 0 1px #666;
     transform: translateY(4px);
   }
   @content;
@@ -55,16 +55,17 @@
 * Scss mixins end
 */
 
+html, 
 body {
+  height:100%;
   background-color: LightGrey;
 }
 
 #projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8%;
+  @include centering {
+    position: relative;
+    margin-top: 8%;
+  }
 }
 
 #the-navbar a:hover {
@@ -76,10 +77,11 @@ body {
 }
 
 .mastfoot {
+  position: fixed;
   bottom: 0;
-  text-align: center;
-  padding: 15px;
   width: 100%;
+  padding: 15px;
+  text-align: center;
   background-color: rgba(209, 216, 230, 1.00);
 }
 
@@ -126,6 +128,17 @@ body {
   color: white;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.back {
+  @include buttons
+}
+
+.back a {
+  color: white;
+  &:hover {
+    text-decoration: none;
   }
 }
 /*

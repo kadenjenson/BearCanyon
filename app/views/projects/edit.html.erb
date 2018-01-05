@@ -1,8 +1,13 @@
 <div class="col-md-8">
-  <h1>Edit Project</h1>
+  <div class="display-inline-block">
+    <span class="btn btn-primary back">
+      <%= link_to '', projects_path, class: "fa fa-chevron-circle-left fa-lg" %>
+    </span>
+    <span>
+      <h1>Edit Project</h1>
+    </span>
+  </div>
 
   <%= render 'shared/form', project: @project %>
-
-  <%= link_to 'Back', projects_path %>
 
 </div>
