@@ -1,17 +1,25 @@
 <%= form_for(project) do |f| %>
 
   <div class="jumbotron">
+    <h5>Title</h5>
     <div class="form-group">
-      <%= f.text_field :title, class: 'form-control', placeholder: "Title" %>
+      <%= f.text_field :title, class: 'form-control' %>
     </div>
 
-    <h5>Say something nice.</h5>
+    <h5>Content | Description</h5>
     <div class="form-group">
       <%= f.text_area :body, class: 'form-control', rows: 10 %>
     </div>
 
     <div class="form-group">
-      <%= f.submit "Submit", class: 'btn btn-primary' %>
+      <div class="display-inline-block">
+        <span class="btn btn-primary back">
+          <%= link_to '', projects_path, class: "fa fa-chevron-circle-left fa-lg" %>
+        </span>
+        <span>
+          <%= f.submit "Submit", class: 'btn btn-primary submit' %>
+        </span>
+      </div>
     </div>
   </div>
   

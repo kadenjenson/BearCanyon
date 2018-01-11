@@ -1,16 +1,11 @@
-<ul class="navbar-nav project-header">
-  <li class="nav-item">
-    <h1>Projects</h1>
-  </li>
-  <li class="nav-item">
-    <%= link_to 'New Post', new_project_path, class: 'btn btn-primary' if logged_in?(:site_admin) %>
-  </li>
-</ul>
+<%= render "shared/project_header" %>
 
-<div class="album text-muted">
-  <%= paginate @projects %>
-    <div class="row">
-      <%= render @projects %>
-    </div>
-  <%= paginate @projects %>
+<div class="container">
+  <div class="album text-muted">
+    <%= paginate @projects %>
+      <div class="row">
+        <%= render @projects %>
+      </div>
+    <%= paginate @projects %>
+  </div>
 </div>
