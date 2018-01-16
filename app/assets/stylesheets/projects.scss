@@ -61,7 +61,7 @@ body {
   background-color: LightGrey;
 }
 
-#the-navbar {
+#the-navbar a:hover {
   color: LightGreen;
 }
 
@@ -69,10 +69,10 @@ body {
   margin-top: 55px;
   margin-bottom: -4rem;
   width: 100%;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   text-align: center;
-  background: image-url('frame_placeholder.jpg') no-repeat;
+  background: linear-gradient(rgba(209, 216, 230, 0.65)), image-url('frame_placeholder.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -87,10 +87,11 @@ body {
 }
 
 .mastfoot {
-  position: fixed;
+  position: relative;
   bottom: 0;
+  left: 0;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background-color: rgba(209, 216, 230, 1.00);
 }

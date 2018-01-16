@@ -5,12 +5,16 @@
 * Custom styles
 */
 
+body {
+  height: 100%;
+}
+
 #pages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 #the-navbar a:hover {
@@ -35,18 +39,22 @@
 .jumbotron {
   position: relative;
   text-align: center;
-  background-color: rgba(209, 216, 230, 0.65);
+  background-color: rgba(209, 216, 230, 0.75);
 }
 
 .mastfoot {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  text-align: center;
-  padding: 15px;
+  left: 0;
   width: 100%;
-  background-color: rgba(209, 216, 230, 0.65);
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(209, 216, 230, 1.00);
 }
 
+.card {
+  background-color: rgba(209, 216, 230, 0.75);
+}
 
 
 
