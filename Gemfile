@@ -7,7 +7,7 @@ end
 
 
 gem 'rails', '~> 5.1.4'
-gem 'pg'
+gem 'pg', '~> 0.21.0'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -35,3 +35,7 @@ gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'gritter', '~> 1.2'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'mini_magick', '~> 4.8'

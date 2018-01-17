@@ -1,6 +1,4 @@
 <div class="jumbotron" id="project-header">
-
-  <p id="project-title">Projects that are</p>
   
   <b id="text-container">
     <span id="rotating-text">
@@ -9,6 +7,7 @@
       Memorable<br />
       Custom
   </b>
+  <p id="project-title">Projects</p>
 
   <div id="new-post-button">
     <%= link_to 'New Post', new_project_path, class: 'btn btn-primary' if logged_in?(:site_admin) %>

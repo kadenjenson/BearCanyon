@@ -1,10 +1,12 @@
 <div class="container">
   <div class="card">
-    <%= image_tag("placeholder.jpg", width: "100%", :alt => "Theres usually an image here") %>
+    <div id="project-images">
+      <%= image_tag @project.image_1, class: "show-image" %>
+    </div>
     <div class="card-body">
       <h3><%= @project.title %></h3>
-      <p class="card-text"><%= @project.body %></p>
-      <p class="card-text"><span class="text-muted">Posted <%= distance_of_time_in_words(@project.created_at, Time.now) %> ago</span></p>
+        <p class="card-text"><%= @project.body %></p>
+        <p class="card-text"><span class="text-muted">Posted <%= distance_of_time_in_words(@project.created_at, Time.now) %> ago</span></p>
       <%= render 'shared/back_button' %>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <div class="col-md-4">
   <div class="card">
-    <%= image_tag("placeholder.jpg", width: "100%", :alt => "Theres usually an image here") %>
+    <%= image_tag project.thumb_image, width: '100%' %>
     <h4><%= link_to project.title, project %></h4>
       <span class="card-text">Posted <%= distance_of_time_in_words(project.created_at, Time.now) %> ago</span>
 

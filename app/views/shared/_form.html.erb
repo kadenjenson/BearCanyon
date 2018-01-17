@@ -1,14 +1,27 @@
 <%= form_for(project) do |f| %>
 
   <div class="jumbotron">
-    <h5>Title</h5>
-    <div class="form-group">
-      <%= f.text_field :title, class: 'form-control' %>
-    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <%= f.file_field :thumb_image %>
+        </div>
+        <div class="form-group">
+          <%= f.file_field :image_1 %>
+        </div>
+      </div>
 
-    <h5>Content | Description</h5>
-    <div class="form-group">
-      <%= f.text_area :body, class: 'form-control', rows: 10 %>
+      <div class="col-md-6">
+        <h5>Title</h5>
+        <div class="form-group">
+          <%= f.text_field :title, class: 'form-control' %>
+        </div>
+
+        <h5>Content | Description</h5>
+        <div class="form-group">
+          <%= f.text_area :body, class: 'form-control', rows: 10 %>
+        </div>
+      </div>
     </div>
 
     <div class="form-group">
