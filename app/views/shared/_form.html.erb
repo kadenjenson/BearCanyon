@@ -2,16 +2,40 @@
 
   <div class="jumbotron">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5">
+        
+        <h5>Thumb Image</h5>
         <div class="form-group">
-          <%= f.file_field :thumb_image %>
+          <label class="btn btn-primary submit">
+            Choose file<%= f.file_field :thumb_image, style: 'display:none;' %>
+          </label>
         </div>
+        
+        <h5>Main Images</h5>
         <div class="form-group">
-          <%= f.file_field :image_1 %>
+          <label class="btn btn-primary submit">
+            Choose file<%= f.file_field :image_1, style: 'display:none;' %>
+          </label>
+          
+          <label class="btn btn-primary submit">
+            Choose file<%= f.file_field :image_2, style: 'display:none;' %>
+          </label>
+
+          <label class="btn btn-primary submit">
+            Choose file<%= f.file_field :image_3, style: 'display:none;' %>
+          </label>
+
+          <label class="btn btn-primary submit">
+            Choose file<%= f.file_field :image_4, style: 'display:none;' %>
+          </label>
+
+          <label class="btn btn-primary submit">
+            Choose file<%= f.file_field :image_5, style: 'display:none;' %>
+          </label>
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-7">
         <h5>Title</h5>
         <div class="form-group">
           <%= f.text_field :title, class: 'form-control' %>
@@ -24,16 +48,15 @@
       </div>
     </div>
 
-    <div class="form-group">
-      <div class="display-inline-block">
-        <span class="btn btn-primary back">
-          <%= link_to '', projects_path, class: "fa fa-chevron-circle-left fa-lg" %>
-        </span>
-        <span>
-          <%= f.submit "Submit", class: 'btn btn-primary submit' %>
-        </span>
-      </div>
+    <div class="display-inline-block">
+      <span class="btn btn-primary back">
+        <%= link_to '', projects_path, class: "fa fa-chevron-circle-left fa-lg" %>
+      </span>
+      <span>
+        <%= f.submit "Submit", class: 'btn btn-primary submit' %>
+      </span>
     </div>
   </div>
   
 <% end %>
+

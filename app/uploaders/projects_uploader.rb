@@ -1,4 +1,7 @@
 class ProjectsUploader < CarrierWave::Uploader::Base
+
+  include CarrierWave::MiniMagick
+
   storage :aws
 
   def store_dir
