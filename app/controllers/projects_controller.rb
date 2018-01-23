@@ -1,10 +1,10 @@
 class ProjectsController < ApplicationController
   before_action :set_project_item, only: [:edit, :show, :update, :destroy]
   layout "project"
-  access all: [:show, :index, :sort], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   def index
-    @projects = Project.by_position.page(params[:page]).per(9)
+    @projects = Project.page(params[:page]).per(9).by_position
     @page_title = "BC | Projects"
   end
 

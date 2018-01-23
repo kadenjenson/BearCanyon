@@ -27,7 +27,7 @@ X Dynamic description for project header
 
 X Implement ability to add pictures to projects
 
-* Add file upload status to show file name when uploaded
+x Add file upload status to show file name when uploaded
 
 * Implement ability for users to comment on project posts
 
