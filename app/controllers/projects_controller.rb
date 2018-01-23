@@ -1,10 +1,10 @@
 class ProjectsController < ApplicationController
   before_action :set_project_item, only: [:edit, :show, :update, :destroy]
   layout "project"
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index, :sort], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   def index
-    @projects = Project.page(params[:page]).per(9)
+    @projects = Project.by_position.page(params[:page]).per(9)
     @page_title = "BC | Projects"
   end
 
@@ -19,7 +19,7 @@ class ProjectsController < ApplicationController
       if @project.save
         format.html {redirect_to projects_path, notice: 'Your post is now live.'}
       else
-        format.html { render :new, notice: 'You need to say something at least.'}
+        format.html { render :new }
       end
     end
   end
