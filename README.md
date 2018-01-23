@@ -1,33 +1,36 @@
 # README
 
-X = Completed tasks
 * = TODO Tasks
 
-X Create MVP(including CRUD)
+~~Strikethrough~~ = Completed tasks
 
-X Import bootstrap
+~~Create MVP(including CRUD)~~
 
-X Add devise.
+~~Import bootstrap~~
 
-X Implement petergate for admin and user roles
+~~Add devise.~~
 
-X Only admins can add/edit/delete projects
+~~Implement petergate for admin and user roles~~
 
-X Basic styling for pages
+~~Only admins can add/edit/delete projects~~
 
-X basic styling for project pages
+~~Basic styling for pages~~
 
-X Links to email and map in the contact
+~~basic styling for project pages~~
 
-X Pagination for projects
+~~Links to email and map in the contact~~
 
-x Background for project index
+~~Pagination for projects~~
 
-X Dynamic description for project header
+~~Background for project index~~
 
-X Implement ability to add pictures to projects
+~~Dynamic description for project header~~
 
-x Add file upload status to show file name when uploaded
+~~Implement ability to add pictures to projects~~
+
+~~Add file upload status to show file name when uploaded~~
+
+* Add markdown to project post description for syntax decoration
 
 * Implement ability for users to comment on project posts
 
