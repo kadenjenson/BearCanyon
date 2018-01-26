@@ -4,8 +4,15 @@ class ProjectsController < ApplicationController
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   def index
-    @projects = Project.by_position.page(params[:page]).per(9)
+    @projects = Project.all.by_position
     @page_title = "BC | Projects"
+  end
+
+  def sort
+    params[:order].each do |key, value|
+      Project.find(value[:id]).update(position: value[:position])
+    end
+    render nothing: true
   end
 
   def new

@@ -1,5 +1,5 @@
 <div class="col-md-4">
-  <div class="card">
+  <div class="card" data-id="<%= project.id %>">
     <%= image_tag project.thumb_image, width: '100%' %>
     <h4><%= link_to project.title, project %></h4>
       <span class="card-text">Posted <%= distance_of_time_in_words(project.created_at, Time.now) %> ago</span>
