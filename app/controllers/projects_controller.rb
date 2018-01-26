@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   def index
-    @projects = Project.page(params[:page]).per(9).by_position
+    @projects = Project.by_position.page(params[:page]).per(9)
     @page_title = "BC | Projects"
   end
 
