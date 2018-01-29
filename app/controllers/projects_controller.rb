@@ -1,10 +1,10 @@
 class ProjectsController < ApplicationController
   before_action :set_project_item, only: [:edit, :show, :update, :destroy]
   layout "project"
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
-    @projects = Project.all.by_position
+    @projects = Project.by_position
     @page_title = "BC | Projects"
   end
 
@@ -12,6 +12,7 @@ class ProjectsController < ApplicationController
     params[:order].each do |key, value|
       Project.find(value[:id]).update(position: value[:position])
     end
+
     render nothing: true
   end
 
