@@ -2,10 +2,8 @@
 
 <div class="container">
   <div class="album text-muted">
-    <%= paginate @projects %>
-      <div class="row">
-        <%= render @projects %>
-      </div>
-    <%= paginate @projects %>
+    <div class="row <%= "sortable" if logged_in?(:site_admin) %>">
+        <%= render partial: 'project', collection: @projects %>
+    </div>
   </div>
 </div>
