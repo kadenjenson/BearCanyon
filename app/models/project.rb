@@ -9,8 +9,12 @@ class Project < ApplicationRecord
   mount_uploader :image_4, ProjectsUploader
   mount_uploader :image_5, ProjectsUploader
 
-  def self.by_position
-    order("position ASC")
-  end
+  # def self.by_position
+  #   self.order("position ASC")
+  # end
+
+  scope :by_position, -> {
+    order('position ASC')
+  }
 
 end
