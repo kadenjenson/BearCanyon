@@ -13,7 +13,7 @@ class ProjectsController < ApplicationController
       Project.find(value[:id]).update(position: value[:position])
     end
 
-    render nothing: true
+    head :ok
   end
 
   def new
@@ -68,6 +68,7 @@ class ProjectsController < ApplicationController
                                     :image_3,
                                     :image_4,
                                     :image_5,
+                                    :position,
                                     technologies_attributes: [:id, :_destroy]
                                     )
   end
