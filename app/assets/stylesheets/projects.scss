@@ -2,6 +2,9 @@
 @import "jquery-ui";
 @import "gritter";
 @import "font-awesome";
+@import 'slick';
+@import 'slick-theme';
+
 
 .album {
   min-height: 50rem;
@@ -202,9 +205,15 @@ body {
 */
 
 .show-image {
-  max-height: 900px;
-  height: auto;
-  width: 100%;
+  max-height: 450px;
+  height: auto!important;
+  width: auto!important;
+}
+
+.show-image-thmb {
+  max-height: 200px;
+  height: auto!important;
+  width: auto!important;
 }
 
 /**
@@ -248,20 +257,3 @@ Styles for file input
 /**
 Styles for file input END
 **/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

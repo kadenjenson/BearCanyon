@@ -17,6 +17,5 @@
 //= require jquery-ui
 //= require turbolinks
 //= require_tree .
+//= require jquery.slick
 //= require gritter
-
-

@@ -1,6 +1,25 @@
+<% content_for :head do %>
+  <meta name="turbolinks-cache-control" content="no-cache">
+<% end %>
+<div class="jumbotron" style=" margin-top: 8%; width: 90%; margin-left: 5%; margin-right: 5%; text-align: center;">
+  <div class="slider-for">
+    <%= image_tag @project.image_1, class: "show-image"%>      
+    <%= image_tag @project.image_2, class: "show-image"%>
+    <%= image_tag @project.image_3, class: "show-image"%>
+    <%= image_tag @project.image_4, class: "show-image"%>
+    <%= image_tag @project.image_5, class: "show-image"%>
+  </div>
+  <div class="slider-nav">
+    <%= image_tag @project.image_1, class: "show-image-thmb"%>
+    <%= image_tag @project.image_2, class: "show-image-thmb"%>
+    <%= image_tag @project.image_3, class: "show-image-thmb"%>
+    <%= image_tag @project.image_4, class: "show-image-thmb"%>
+    <%= image_tag @project.image_5, class: "show-image-thmb"%>
+  </div>
+</div>
 <div class="container">
-  <div class="jumbotron">
-      <%= image_tag @project.image_1, class: "show-image" %>
+  <div class="jumbotron">   
+
     <div class="card-body">
       <h3><%= @project.title %></h3>
         <p class="card-text"><%= @project.body %></p>
@@ -9,3 +28,22 @@
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function(){
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
+  });
+</script>
