@@ -30,6 +30,12 @@
 
 ~~Add file upload status to show file name when uploaded~~
 
+* Add logo to projects index and home page.
+
+* Add edit user page
+
+* Add picture scrolling
+
 * Add markdown to project post description for syntax decoration
 
 * Implement ability for users to comment on project posts
