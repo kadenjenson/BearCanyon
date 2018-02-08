@@ -34,10 +34,6 @@
 
 * Add edit user page
 
-* Add picture scrolling
-
-* Add markdown to project post description for syntax decoration
-
-* Implement ability for users to comment on project posts
+~~Add picture scrolling~~
 
 * Final styling/changes

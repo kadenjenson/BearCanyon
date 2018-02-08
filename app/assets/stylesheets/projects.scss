@@ -204,17 +204,49 @@ body {
 * Button Styles end
 */
 
+/*
+* Show page styling
+*/
+#project-show-card {
+  margin-top: 8%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#image-pagination {
+  text-align: center;
+}
+
 .show-image {
   max-height: 450px;
+  max-width: 750px;
+  height: auto;
+  width: auto;
+}
+
+.slider-nav {
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.slider-nav button {
+  color: LightBlue;
+}
+
+.show-image-thmb {
+  max-height: 150px;
   height: auto!important;
   width: auto!important;
 }
 
-.show-image-thmb {
-  max-height: 200px;
-  height: auto!important;
-  width: auto!important;
+.show-container {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
+/*
+* Show page styling END
+*/
 
 /**
 Styles for file input
