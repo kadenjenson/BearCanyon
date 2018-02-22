@@ -32,7 +32,7 @@
 
 * Add logo to projects index and home page.
 
-* Add edit user page
+~~Add edit user page~~
 
 ~~Add picture scrolling~~
 
