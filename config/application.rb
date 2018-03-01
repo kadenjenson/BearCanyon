@@ -21,5 +21,6 @@ module BearCanyon
   class Application < Rails::Application
     config.load_defaults 5.1
     config.secret_key_base = ENV["SECRET_KEY_BASE"]
+    config.serve_static_assets = true
   end
 end
